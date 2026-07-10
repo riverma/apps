@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#1a2240">
+    <title>Apps · Rishi Verma</title>
+    <meta name="description" content="Apps designed by Rishi Verma. No tracking, no ads, free and open source. Runs in your browser on iPhone, Android, Mac, PC, and tablets.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+</head>
+<body>
+
+<header class="site-header">
+    <h1 class="site-title">Apps</h1>
+    <p class="site-sub">Designed by Rishi Verma</p>
+    <p class="site-lead">No tracking. No ads. Free and open source. Runs in your browser, with no money or data going to Big Tech.</p>
+
+    <ul class="badges" aria-label="What these apps guarantee, and where they run">
+        <li><img src="badges/license.svg" alt="License: AGPL-3.0" height="20"></li>
+        <li><img src="badges/opensource.svg" alt="100% open source" height="20"></li>
+        <li><img src="badges/notracking.svg" alt="Privacy: no tracking" height="20"></li>
+        <li><img src="badges/noads.svg" alt="No ads" height="20"></li>
+        <li><img src="badges/iphone.svg" alt="Works on iPhone and iPad" height="20"></li>
+        <li><img src="badges/android.svg" alt="Works on Android" height="20"></li>
+        <li><img src="badges/mac.svg" alt="Works on macOS" height="20"></li>
+        <li><img src="badges/windows.svg" alt="Works on Windows" height="20"></li>
+        <li><img src="badges/linux.svg" alt="Works on Linux" height="20"></li>
+        <li><img src="badges/browser.svg" alt="Runs in any browser" height="20"></li>
+    </ul>
+
+    <button class="guide-link" type="button" data-guide>How to install these apps &rarr;</button>
+</header>
+
+<main>
+    <ul class="tile-grid">
+        <li class="tile" style="--shot:url('previews/habits.jpg')">
+            <div class="tile-content">
+                <span class="tile-title">Habits</span>
+                <span class="tile-desc">A pocket habit checklist. Tally your day, see your streaks.</span>
+            </div>
+            <div class="tile-actions">
+                <a class="btn btn-open" href="https://habits.riverma.com/">Open</a>
+                <button class="btn btn-install" type="button" data-install="Habits" data-url="https://habits.riverma.com/">Install</button>
+            </div>
+        </li>
+        <li class="tile" style="--shot:url('previews/math.jpg')">
+            <div class="tile-content">
+                <span class="tile-title">Mental Math</span>
+                <span class="tile-desc">Race through arithmetic puzzles. Beat the clock and chase your best score.</span>
+            </div>
+            <div class="tile-actions">
+                <a class="btn btn-open" href="https://math.riverma.com/">Open</a>
+                <button class="btn btn-install" type="button" data-install="Mental Math" data-url="https://math.riverma.com/">Install</button>
+            </div>
+        </li>
+        <li class="tile" style="--shot:url('previews/philosophy.jpg')">
+            <div class="tile-content">
+                <span class="tile-title">Philosophy Cards</span>
+                <span class="tile-desc">A card game exploring philosophical concepts and dilemmas.</span>
+            </div>
+            <div class="tile-actions">
+                <a class="btn btn-open" href="https://philosophy.riverma.com/">Open</a>
+                <button class="btn btn-install" type="button" data-install="Philosophy Cards" data-url="https://philosophy.riverma.com/">Install</button>
+            </div>
+        </li>
+        <li class="tile" style="--shot:url('previews/adventures.jpg')">
+            <div class="tile-content">
+                <span class="tile-title">Unexpected Adventures</span>
+                <span class="tile-desc">Randomly discover new places to explore on a world map.</span>
+                <span class="tile-badge">requires internet</span>
+            </div>
+            <div class="tile-actions">
+                <a class="btn btn-open" href="https://adventures.riverma.com/">Open</a>
+                <button class="btn btn-install" type="button" data-install="Unexpected Adventures" data-url="https://adventures.riverma.com/">Install</button>
+            </div>
+        </li>
+        <li class="tile" style="--shot:url('previews/mobility.jpg')">
+            <div class="tile-content">
+                <span class="tile-title">Mobility Choices</span>
+                <span class="tile-desc">Compare driving, cycling, e-biking, and walking: cost, time, CO₂, and health.</span>
+                <span class="tile-badge">requires internet</span>
+            </div>
+            <div class="tile-actions">
+                <a class="btn btn-open" href="https://mobility.riverma.com/">Open</a>
+                <button class="btn btn-install" type="button" data-install="Mobility Choices" data-url="https://mobility.riverma.com/">Install</button>
+            </div>
+        </li>
+        <li class="tile" style="--shot:url('previews/tabla.jpg')">
+            <div class="tile-content">
+                <span class="tile-title">Virtual Tabla</span>
+                <span class="tile-desc">An in-browser tabla you can play with your keyboard.</span>
+            </div>
+            <div class="tile-actions">
+                <a class="btn btn-open" href="https://tabla.riverma.com/">Open</a>
+                <button class="btn btn-install" type="button" data-install="Virtual Tabla" data-url="https://tabla.riverma.com/">Install</button>
+            </div>
+        </li>
+    </ul>
+</main>
+
+<footer class="app-footer">
+    <p class="app-updated">Last updated: July 10, 2026</p>
+    <p class="app-links">
+        <a class="gh" href="https://github.com/riverma/apps" target="_blank" rel="noopener" aria-label="Source code on GitHub" title="Source on GitHub">
+            <svg viewBox="0 0 16 16" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+        </a>
+        <a class="app-home" href="https://riverma.com/">riverma.com</a>
+    </p>
+    <p class="app-copyright">&copy; 2026 Rishi Verma. Code licensed under <a href="https://www.gnu.org/licenses/agpl-3.0.en.html" target="_blank" rel="noopener">AGPL-3.0</a>.</p>
+</footer>
+
+<dialog class="guide" id="installGuide" aria-labelledby="guideHeading">
+    <div class="guide-inner">
+        <div class="guide-head">
+            <h2 id="guideHeading">Install <span id="guideApp">an app</span></h2>
+            <button class="guide-close" type="button" data-close aria-label="Close">✕</button>
+        </div>
+        <p class="guide-lead">These are web apps. No store, no download. Open the app, then add it to your home screen or dock. It then launches full-screen like a native app.</p>
+        <a class="btn btn-open guide-open" id="guideOpen" href="#" hidden>Open the app</a>
+
+        <section class="guide-platform">
+            <h3>iPhone / iPad, in Safari</h3>
+            <ol>
+                <li>Open the app in <strong>Safari</strong>.</li>
+                <li>Tap the <strong>Share</strong> button (the square with an up-arrow).</li>
+                <li>Choose <strong>Add to Home Screen</strong>, then <strong>Add</strong>.</li>
+            </ol>
+        </section>
+        <section class="guide-platform">
+            <h3>Android, in Chrome</h3>
+            <ol>
+                <li>Open the app in <strong>Chrome</strong>.</li>
+                <li>Tap the <strong>⋮</strong> menu, then <strong>Install app</strong> (or <strong>Add to Home screen</strong>).</li>
+                <li>Confirm. The app appears in your app drawer.</li>
+            </ol>
+        </section>
+        <section class="guide-platform">
+            <h3>Desktop, in Firefox, Chrome, Edge, and others</h3>
+            <ol>
+                <li>Every app runs in any desktop browser.</li>
+                <li>To pin it as a standalone app, use <strong>Chrome</strong> or <strong>Edge</strong>: click the <strong>install icon</strong> in the address bar (a monitor with a down-arrow), or open the <strong>⋮</strong> menu and choose <strong>Install</strong>.</li>
+            </ol>
+        </section>
+        <p class="guide-note">Offline support applies to Habits, Mental Math, Philosophy Cards and Virtual Tabla. Unexpected Adventures and Mobility Choices need an internet connection for maps and routing.</p>
+        <button class="btn btn-guide-done" type="button" data-close>Got it</button>
+    </div>
+</dialog>
+
+<script>
+    const dlg = document.getElementById('installGuide');
+    const appSpan = document.getElementById('guideApp');
+    const openLink = document.getElementById('guideOpen');
+    function openGuide(name, url) {
+        if (name) { appSpan.textContent = name; openLink.hidden = false; openLink.href = url; openLink.textContent = 'Open ' + name; }
+        else { appSpan.textContent = 'an app'; openLink.hidden = true; }
+        if (typeof dlg.showModal === 'function') dlg.showModal(); else dlg.setAttribute('open', '');
+    }
+    document.querySelectorAll('[data-install]').forEach((b) => b.addEventListener('click', () => openGuide(b.dataset.install, b.dataset.url)));
+    document.querySelectorAll('[data-guide]').forEach((b) => b.addEventListener('click', () => openGuide()));
+    dlg.querySelectorAll('[data-close]').forEach((b) => b.addEventListener('click', () => dlg.close()));
+    dlg.addEventListener('click', (e) => { if (e.target === dlg) dlg.close(); });
+
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => navigator.serviceWorker.register('sw.js'));
+    }
+</script>
+</body>
+</html>
