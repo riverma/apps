@@ -85,12 +85,13 @@ body { max-width: 46rem; margin: 0 auto; padding: 1.75rem 1.05rem 2.5rem; }
 
 /* ---------- buttons ---------- */
 .btn {
-    display: inline-block;
+    display: inline-flex; align-items: center; justify-content: center; gap: 0.35rem;
     padding: 0.5rem 1.05rem; border-radius: 999px;
     font-size: 0.85rem; font-weight: 700; cursor: pointer;
     text-decoration: none; border: 1.5px solid transparent; line-height: 1;
     transition: transform 0.12s ease, background 0.12s ease;
 }
+.btn .dl-ico { flex: none; margin-left: -0.15rem; }
 .btn:active { transform: translateY(1px); }
 .btn-open { background: #fff; color: #16233f; }
 .btn-open:hover, .btn-open:focus-visible { background: #eef2f8; }
