@@ -1,7 +1,7 @@
 /* Apps by Rishi Verma — offline service worker.
  * Cache-first: the whole app shell is precached, so it runs with no network.
  * Bump VERSION on every release so clients pick up new assets (see AGENTS.md). */
-const VERSION = 'v1.0.2';
+const VERSION = 'v1.0.3';
 const CACHE = `apps-${VERSION}`;
 
 const ASSETS = [
