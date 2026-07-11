@@ -117,11 +117,10 @@
 <dialog class="guide" id="installGuide" aria-labelledby="guideHeading">
     <div class="guide-inner">
         <div class="guide-head">
-            <h2 id="guideHeading">Install <span id="guideApp">an app</span></h2>
+            <h2 id="guideHeading">How to install</h2>
             <button class="guide-close" type="button" data-close aria-label="Close">✕</button>
         </div>
-        <p class="guide-lead">These are web apps. No store, no download. Open the app, then add it to your home screen or dock. It then launches full-screen like a native app.</p>
-        <a class="btn btn-open guide-open" id="guideOpen" href="#" hidden>Open the app</a>
+        <p class="guide-lead">These are web apps. No store, no download. Open an app, then add it to your home screen or dock. It then launches full-screen like a native app.</p>
 
         <section class="guide-platform">
             <h3>iPhone / iPad, in Safari</h3>
@@ -146,22 +145,17 @@
                 <li>To pin it as a standalone app, use <strong>Chrome</strong> or <strong>Edge</strong>: click the <strong>install icon</strong> in the address bar (a monitor with a down-arrow), or open the <strong>⋮</strong> menu and choose <strong>Install</strong>.</li>
             </ol>
         </section>
-        <p class="guide-note">Offline support applies to Habits, Mental Math, Philosophy Cards and Virtual Tabla. Unexpected Adventures and Mobility Choices need an internet connection for maps and routing.</p>
+        <p class="guide-note">Most apps work fully offline once installed. The map-based apps need an internet connection for maps and routing.</p>
         <button class="btn btn-guide-done" type="button" data-close>Got it</button>
     </div>
 </dialog>
 
 <script>
     const dlg = document.getElementById('installGuide');
-    const appSpan = document.getElementById('guideApp');
-    const openLink = document.getElementById('guideOpen');
-    function openGuide(name, url) {
-        if (name) { appSpan.textContent = name; openLink.hidden = false; openLink.href = url; openLink.textContent = 'Open ' + name; }
-        else { appSpan.textContent = 'an app'; openLink.hidden = true; }
+    function openGuide() {
         if (typeof dlg.showModal === 'function') dlg.showModal(); else dlg.setAttribute('open', '');
     }
-    document.querySelectorAll('[data-install]').forEach((b) => b.addEventListener('click', () => openGuide(b.dataset.install, b.dataset.url)));
-    document.querySelectorAll('[data-guide]').forEach((b) => b.addEventListener('click', () => openGuide()));
+    document.querySelectorAll('[data-install], [data-guide]').forEach((b) => b.addEventListener('click', openGuide));
     dlg.querySelectorAll('[data-close]').forEach((b) => b.addEventListener('click', () => dlg.close()));
     dlg.addEventListener('click', (e) => { if (e.target === dlg) dlg.close(); });
 
