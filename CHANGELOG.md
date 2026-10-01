@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.2.0] - 2026-09-30
+
+### Added
+- Treasured, a wallet for the people you love, at <https://treasured.riverma.com>.
+
 ## [1.1.0] - 2026-09-13
 
 ### Added
@@ -39,7 +44,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - In-app footer with a privacy statement, version, and source/license link.
 - AGPL-3.0 license.
 
-[Unreleased]: https://github.com/riverma/apps/compare/v1.0.3...HEAD
+[Unreleased]: https://github.com/riverma/apps/compare/v1.2.0...HEAD
+[1.2.0]: https://github.com/riverma/apps/compare/v1.1.0...v1.2.0
+[1.1.0]: https://github.com/riverma/apps/compare/v1.0.3...v1.1.0
 [1.0.3]: https://github.com/riverma/apps/compare/v1.0.2...v1.0.3
 [1.0.2]: https://github.com/riverma/apps/compare/v1.0.1...v1.0.2
 [1.0.1]: https://github.com/riverma/apps/compare/v1.0.0...v1.0.1

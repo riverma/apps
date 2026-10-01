@@ -1,7 +1,7 @@
 /* Apps by Rishi Verma — offline service worker.
  * Cache-first: the whole app shell is precached, so it runs with no network.
  * Bump VERSION on every release so clients pick up new assets (see AGENTS.md). */
-const VERSION = 'v1.1.0';
+const VERSION = 'v1.2.0';
 const CACHE = `apps-${VERSION}`;
 
 const ASSETS = [
@@ -20,6 +20,7 @@ const ASSETS = [
   "tile-icons/mobility.png",
   "tile-icons/philosophy.png",
   "tile-icons/tabla.png",
+  "tile-icons/treasured.png",
   "previews/adventures.jpg",
   "previews/giraffy.jpg",
   "previews/habits.jpg",
@@ -27,6 +28,7 @@ const ASSETS = [
   "previews/mobility.jpg",
   "previews/philosophy.jpg",
   "previews/tabla.jpg",
+  "previews/treasured.jpg",
   "badges/android.svg",
   "badges/browser.svg",
   "badges/iphone.svg",
